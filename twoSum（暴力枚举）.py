@@ -15,10 +15,13 @@
 
 
 # 暴力枚举
-def twosum(nums: List[int], target: int) -> List[int]:
-    for i in range(len(nums)):
-        for j in range(len(nums) + 1):
-            if j < len(nums) and nums[i] + nums[j] == target and i != j:
+from typing import List
+
+def twosum(nums: List[int], target: int) -> List[int] | None:
+    n = len(nums)
+    for i in range(n):
+        for j in range(i + 1, n):
+            if nums[i] + nums[j] == target:
                 return [i, j]
 
-print(twoSum([1, 2, 4], 6))
+print(twosum([1, 2, 4], 6))
