@@ -7,7 +7,7 @@ def twosum(nums: List[int], target: int) -> List[int]:
 
     for i, num in enumerate(nums):
         complement = target - num
-        if complement in hashtable:   # 检查键是否存在
+        if complement in hashtable:    # 检查键是否存在
             return [hashtable[target - num], i]
         hashtable[nums[i]] = i
     return []
