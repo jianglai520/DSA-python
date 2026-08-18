@@ -17,5 +17,5 @@ rotate(nums2, 2)
 print(nums2)  # [3,99,-1,-100]
 
 nums3 = [1,2,3,4,5]
-rotate(nums3, 7)  # k 大于长度
+rotate(nums3, 7)
 print(nums3)  # [4,5,1,2,3] 因为 7%5=2
