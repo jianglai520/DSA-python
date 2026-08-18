@@ -11,4 +11,4 @@ def findDuplicate(nums: List[int]) -> int:
             set2.add(num)
     return list(set2)[0]
 
-print(findDuplicate([1, 2, 4, 2, 2]))
+print(findDuplicate([1, 2, 4, 2, 2]))    # 空间复杂度不是常数--pass
