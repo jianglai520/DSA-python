@@ -8,6 +8,8 @@ print(normal_dict.get('key', 0))   # 需要手动设置默认值
 # defaultdict
 dd = defaultdict(int)
 print(dd['key'])
+print(dd[1])
+print(dd)
 
 """
 核心区别：
