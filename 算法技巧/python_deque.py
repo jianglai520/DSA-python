@@ -13,3 +13,7 @@ print(dq)
 dq.pop()   # 删除右侧
 dq.popleft()   # 删除左侧（比 list.pop(0) 快得多）
 print(dq)
+
+
+print(dq[0])   # 查看队首（左边第一个）
+print(dq[-1])   # 查看队尾（右边最后一个）
