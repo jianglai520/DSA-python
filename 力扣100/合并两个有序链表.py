@@ -21,7 +21,3 @@ def mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optio
     cur.next = list1 if list1 else list2
 
     return dummy.next
-
-l1 = [1, 2, 4]
-l2 = [1, 3, 4]
-print(mergeTwoLists(l1, l2))
