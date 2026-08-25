@@ -1,4 +1,4 @@
-from create_linked_list import ListNode, create_linked_list
+from create_linked_list import create_linked_list
 
 # 将链表转换为列表
 def linked_list_to_list(head):
@@ -12,5 +12,6 @@ def linked_list_to_list(head):
 
 
 # 使用
-head = create_linked_list([1, 2, 3])
-print(linked_list_to_list(head))
+if __name__ == "__main":
+    head = create_linked_list([1, 2, 3])
+    print(linked_list_to_list(head))
