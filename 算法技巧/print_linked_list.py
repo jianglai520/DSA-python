@@ -12,5 +12,6 @@ def print_linked_list(head):
         cur = cur.next
     print("None")
 
-head = ListNode(1, ListNode(2, ListNode(3)))
-print_linked_list(head)
+if __name__ == "__main__":
+    head = ListNode(1, ListNode(2, ListNode(3)))
+    print_linked_list(head)
