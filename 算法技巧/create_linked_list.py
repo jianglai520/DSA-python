@@ -25,7 +25,9 @@ def create_linked_list(arr):
         cur = cur.next
     return dummy.next
 
-arr = [1, 2, 3, 4]
-head = create_linked_list(arr)
-print_linked_list(head)
+
+if __name__ == "__main__":
+    arr = [1, 2, 3, 4]
+    head = create_linked_list(arr)
+    print_linked_list(head)
 
