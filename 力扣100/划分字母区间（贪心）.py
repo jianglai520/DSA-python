@@ -1,5 +1,6 @@
 def partitionLabels(s: str) -> List[int]:
     last = {}
+    n = len(s)
     for i, ch in enumerate(s):
         last[ch] = i
 
@@ -7,8 +8,8 @@ def partitionLabels(s: str) -> List[int]:
     start = 0
     end = 0
 
-    for i, ch in enumerate(s):
-        end = max(end, last[ch])
+    for i in range(n):
+        end = max(end, last[s[i]])
 
         if i == end:
             result.append(end - start + 1)
