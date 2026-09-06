@@ -11,7 +11,7 @@
 """
 from typing import List
 
-def bubble_sort(arr: List[int]):
+def bubble_sort(arr: List[int]) -> List[int]:
     n = len(arr)
 
     for i in range(n-1):
