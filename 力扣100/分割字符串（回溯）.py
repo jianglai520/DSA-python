@@ -2,7 +2,7 @@ from typing import List
 
 def partition(s: str) -> List[List[str]]:
     if not s:
-        return []
+        return [[]]
 
     res = []
     path = []
@@ -12,7 +12,7 @@ def partition(s: str) -> List[List[str]]:
 
     def backtrack(start: int):
         if start == len(s):
-            res.append(path.copy())
+            res.append(path[:])
 
         for end in range(start, len(s)):
             sub = s[start: end+1]
