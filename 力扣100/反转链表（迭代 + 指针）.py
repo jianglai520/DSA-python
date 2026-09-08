@@ -7,7 +7,7 @@ def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
     prev = None
     curr = head
 
-    while curr is not None:
+    while curr:
         next_temp = curr.next
 
         curr.next = prev
