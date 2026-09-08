@@ -1,4 +1,3 @@
-from idlelib.colorizer import color_config
 from typing import List
 
 def solveNQueens(n: int) -> List[List[int]]:
