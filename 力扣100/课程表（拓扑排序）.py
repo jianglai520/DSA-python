@@ -2,14 +2,14 @@ from typing import List
 from collections import deque
 
 def canFinish(numCourses: int, prerequisites: List[List[int]]) -> bool:
-    graph = [[] for _ in numCourses]
-    indegree = [0] * numCourses
+    graph = [[] for _ in range(numCourses)]
+    indegree = [] * numCourses
 
     for a, b in prerequisites:
         graph[b].append(a)
         indegree[a] += 1
 
-    queue = deque([i for i in range(numCourses) if indegree[i] == 0])
+    queue = deque([i for i in range(numCourses) if indegree == 0])
 
     finished = 0
     while queue:
@@ -22,5 +22,3 @@ def canFinish(numCourses: int, prerequisites: List[List[int]]) -> bool:
                 queue.append(nxt)
 
     return finished == numCourses
-
-
