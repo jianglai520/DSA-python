@@ -1,5 +1,8 @@
+import sys
+
 # 超时
 def main():
+    input = sys.stdin.readline
     n, k = map(int, input().split())
     a = list(map(int, input().split()))
 
