@@ -1,3 +1,5 @@
+# 内存超限
+
 st, N = input().split()
 n = int(N)
 nums = len(st)
