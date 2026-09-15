@@ -29,6 +29,6 @@ print(nums[0])
 
 # heapify(list) -- 把普通列表原地变成堆
 arr = [5, 1, 8, 3, 9, 2]
-heapq.heapify(arr)
+heapq.heapify(arr)    # 注意：堆只保证父节点<=子节点，不保证兄弟之间、不同子树之间的大小顺序
 print(arr[0])
 print(arr)
