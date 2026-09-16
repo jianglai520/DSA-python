@@ -1,3 +1,8 @@
+"""
+树有个重要性质：
+从任意点出发，能走到的最远点，一定是直径的某个端点
+"""
+
 from collections import deque
 import sys
 
