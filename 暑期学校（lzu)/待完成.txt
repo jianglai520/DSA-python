@@ -3,11 +3,10 @@
 2）使命召唤2025
 3）L-马走日
 4）[USACO1.5]八皇后 Checker Challenge
-5）八皇后问题
-6）【HDUOJ】Nightmare II
-7）过河卒
-8）问路有多长
-9）连通数
-10）洛谷P2949 [USACO09OPEN] Work Scheduling G
-11）卡牌游戏II
-12）洛谷P2240 部分背包问题
+5）【HDUOJ】Nightmare II
+6）过河卒
+7）问路有多长
+8）连通数
+9）洛谷P2949 [USACO09OPEN] Work Scheduling G
+10）卡牌游戏II
+11）洛谷P2240 部分背包问题
