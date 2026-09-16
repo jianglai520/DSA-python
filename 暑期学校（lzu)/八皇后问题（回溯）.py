@@ -1,37 +1,51 @@
-import sys
+def main(n):
+    if n <= 0:
+        return []
 
-def main():
-    solutions = []
-    pos = [0] * 8
-    col = [False] * 8
-    diag1 = [False] * 15
-    diag2 = [False] * 15
+    result = []
+    pos = [0] * n
+    cols = set()
+    diag1 = set()
+    diag2 = set()
 
-    def dfs(row):
-        if row == 8:
-            num = 0
-            for c in pos:
-                num = num * 10 + (c + 1)
-            solutions.append(num)
+    def is_not_under_attack(row, col):
+        return col not in cols and (row - col) not in diag1 and (row + col) not in diag2
+
+    def place_queen(row, col):
+        cols.add(col)
+        diag1.add(row - col)
+        diag2.add(row + col)
+        pos[row] = col
+
+    def remove_queen(row, col):
+        cols.remove(col)
+        diag1.remove(row - col)
+        diag2.remove(row + col)
+
+    def backtrack(row):
+        if row == n:
+            result.append("".join(str(c+1) for c in pos))
             return
 
-        for c in range(8):
-            if col[c] or diag1[row -c + 7] or diag2[row + c]:
-                continue
-            pos[row] = c
-            col[c] = diag1[row -c + 7] = diag2[row + c] = True
-            dfs(row + 1)
-            col[c] = diag1[row - c + 7] = diag2[row + c] = False
+        for col in range(n):
+            if is_not_under_attack(row, col):
+                place_queen(row, col)
+                backtrack(row + 1)
+                remove_queen(row, col)
 
-    dfs(0)
+    backtrack(0)
+    return result
+
+if __name__ == "__main__":
+    import sys
+
+    all_solutions = main(8)
 
     data = sys.stdin.read().split()
     n = int(data[0])
     out = []
     for i in range(1, n+1):
         b = int(data[i])
-        out.append(str(solutions[b - 1]))
+        out.append(all_solutions[b-1])
     sys.stdout.write("\n".join(out) + "\n")
 
-if __name__ == "__main__":
-    main()
