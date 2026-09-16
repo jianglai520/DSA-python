@@ -5,11 +5,10 @@
 4）[USACO1.5]八皇后 Checker Challenge
 5）八皇后问题
 6）【HDUOJ】Nightmare II
-7）拓扑排序
-8）树的直径
-9）过河卒
-10）问路有多长
-11）连通数
-12）洛谷P2949 [USACO09OPEN] Work Scheduling G
-13）卡牌游戏II
-14）洛谷P2240 部分背包问题
+7）树的直径
+8）过河卒
+9）问路有多长
+10）连通数
+11）洛谷P2949 [USACO09OPEN] Work Scheduling G
+12）卡牌游戏II
+13）洛谷P2240 部分背包问题
