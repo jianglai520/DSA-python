@@ -5,6 +5,5 @@
 4）[USACO1.5]八皇后 Checker Challenge
 5）【HDUOJ】Nightmare II
 6）过河卒
-7）问路有多长
-8）连通数
-9）卡牌游戏II
+7）连通数
+8）卡牌游戏II
