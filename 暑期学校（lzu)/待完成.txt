@@ -1,8 +1,7 @@
 目前待完成的题目：
 1）亲戚（加强版）
 2）使命召唤2025
-3）L-马走日
-4）[USACO1.5]八皇后 Checker Challenge
-5）【HDUOJ】Nightmare II
-6）连通数
-7）卡牌游戏II
+3）[USACO1.5]八皇后 Checker Challenge
+4）【HDUOJ】Nightmare II
+5）连通数
+6）卡牌游戏II
