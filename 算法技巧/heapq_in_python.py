@@ -32,3 +32,8 @@ arr = [5, 1, 8, 3, 9, 2]
 heapq.heapify(arr)    # 注意：堆只保证父节点<=子节点，不保证兄弟之间、不同子树之间的大小顺序
 print(arr[0])
 print(arr)
+
+# heapreplace(heap, item) 弹出并返回最小元素，然后压入item。相当于先heappop再 heappush,但效率更高
+heap = [1, 3, 2]
+print(heapq.heapreplace(heap, 0))
+print(heap)
