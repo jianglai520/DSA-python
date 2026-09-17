@@ -23,7 +23,7 @@ def main():
         if len(heap) < d:
             push(heap, p)
             total += p
-        elif heap and heap[0] < p:
+        elif heap[0] < p:
             total += p - heap[0]
             replace(heap, p)
 
