@@ -4,6 +4,5 @@
 3）L-马走日
 4）[USACO1.5]八皇后 Checker Challenge
 5）【HDUOJ】Nightmare II
-6）过河卒
-7）连通数
-8）卡牌游戏II
+6）连通数
+7）卡牌游戏II
