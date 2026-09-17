@@ -1,5 +1,5 @@
 目前待完成的题目：
-1）使命召唤2025
+1）使命召唤2025 -- 放弃
 2）[USACO1.5]八皇后 Checker Challenge
 3）【HDUOJ】Nightmare II
 4）连通数
