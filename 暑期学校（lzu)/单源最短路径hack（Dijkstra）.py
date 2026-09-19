@@ -24,7 +24,7 @@ def main():
             nd = d + w
             if nd < dist[v]:
                 dist[v] = nd
-                heapq.heappush(dq, (dist[v], v))
+                heapq.heappush(pq, (dist[v], v))
 
     ans = []
     for i in range(1, n + 1):
