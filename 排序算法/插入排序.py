@@ -15,7 +15,7 @@ from typing import List
 def insertion_sort(arr: List[int]) -> List[int]:
     n = len(arr)
 
-    for i in range(1, n):
+    for i in range(1, n):   # 从索引1开始，因为索引0只有一个元素，天然视为已排好序
         key = arr[i]
         j = i - 1
         while j >= 0 and arr[j] > key:
