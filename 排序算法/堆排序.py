@@ -11,3 +11,8 @@ import heapq
 def heap_sort(arr: List[int]) -> List[int]:
     heapq.heapify(arr)   # 建立最小堆
     return [heapq.heappop(arr) for _ in range(len(arr))]
+
+# 测试
+if __name__ == "__main__":
+    arr = [6, 3, 1, -1]
+    print(heap_sort(arr))
