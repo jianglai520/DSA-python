@@ -10,5 +10,11 @@ def twoSum(nums: List[int], target: int) -> List[int]:
         hashtable[num] = i
     return []
 
+# 测试
+if __name__ == "__main__":
+    nums = [1, 3, 5]
+    target = 4
+    print(twoSum(nums, target))
+
 
 
