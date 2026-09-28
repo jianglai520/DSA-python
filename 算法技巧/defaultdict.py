@@ -18,3 +18,9 @@ print(dd)
 
 defaultdict：访问不存在的 key 会自动创建，并赋予默认值
 """
+
+# defaultdict
+dd_list = defaultdict(list)
+print(dd_list)
+print(dd_list["eat"])
+print(dd_list)
