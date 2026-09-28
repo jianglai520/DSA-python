@@ -46,3 +46,10 @@ print(sorted(d.items(), key = lambda x: x[1]))  # 按照值排序
 print(sorted(d))   # 只排序键
 
 
+# 字符串排序
+s = 'cbaddheh'
+print(sorted(s))   # 输出的是list,不是str
+print(''.join(sorted(s)))
+
+
+
