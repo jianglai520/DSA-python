@@ -7,7 +7,7 @@
 时间复杂度：O(n*n)
 """
 
-
+# 非常不推荐这样做！！！
 from typing import List
 
 def sortColors(nums: List[int]) -> None:
